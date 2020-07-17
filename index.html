@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <div class="nav-1">
+                <h1>Shopi</h1>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>My Cart</a></li>
+                </ul>
+            </div>
+            <div class="cart">
+                <div class="circle">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </div>
+                <span id="no-of-products-purchased">0</span>
+            </div>
+        </nav>
+    </div>
+
+    <div class="shop">
+        <main>
+            <div class="shop-head">
+                <h2>Shop</h2>
+            </div>
+            <div class="shopping">
+                <div class="products-container">
+                    <div class="product-card">
+                        <i class="fa fa-heart product-liked" onclick="Product_Like_Click(this)"></i>
+                        <div class="product-img" >
+                            <img src="products/watch-1.png" alt="">
+                        </div>
+                        <div class="product-name">
+                            <h5>New Kelleyborough</h5>
+                        </div>
+                        <div class="product-rating" >
+                            <div class="rate" >
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <span id="product-rating-no">(32)</span>
+                        </div>
+                        <div class="product-more-info">
+                            <p class="product-price">299$</p>
+                            <div class="circle"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <i class="fa fa-heart product-liked" onclick="Product_Like_Click(this)"></i>
+                        <div class="product-img" >
+                            <img src="products/watch-2.png" alt="">
+                        </div>
+                        <div class="product-name">
+                            <h5>New Black Watch</h5>
+                        </div>
+                        <div class="product-rating" >
+                            <div class="rate" >
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <span id="product-rating-no">(543)</span>
+                        </div>
+                        <div class="product-more-info">
+                            <p class="product-price">400$</p>
+                            <div class="circle"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <i class="fa fa-heart product-liked" onclick="Product_Like_Click(this)"></i>
+                        <div class="product-img" >
+                            <img src="products/watch-3.png" alt="">
+                        </div>
+                        <div class="product-name">
+                            <h5>Classic Watch</h5>
+                        </div>
+                        <div class="product-rating" >
+                            <div class="rate" >
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <span id="product-rating-no">(102)</span>
+                        </div>
+                        <div class="product-more-info">
+                            <p class="product-price">199$</p>
+                            <div class="circle"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                        </div>
+                    </div><div class="product-card">
+                        <i class="fa fa-heart-o product-liked" onclick="Product_Like_Click(this)"></i>
+                        <div class="product-img" >
+                            <img src="products/watch-4.png" alt="">
+                        </div>
+                        <div class="product-name">
+                            <h5>Traditional Watch</h5>
+                        </div>
+                        <div class="product-rating" >
+                            <div class="rate" >
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <span id="product-rating-no">(10)</span>
+                        </div>
+                        <div class="product-more-info">
+                            <p class="product-price">99$</p>
+                            <div class="circle"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <i class="fa fa-heart-o product-liked" onclick="Product_Like_Click(this)"></i>
+                        <div class="product-img" >
+                            <img src="products/watch-5.png" alt="">
+                        </div>
+                        <div class="product-name">
+                            <h5>Brown Alex Watch</h5>
+                        </div>
+                        <div class="product-rating" >
+                            <div class="rate" >
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <span id="product-rating-no">(312</span>
+                        </div>
+                        <div class="product-more-info">
+                            <p class="product-price">560$</p>
+                            <div class="circle"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+<script src="main.js"></script>
+</html>
